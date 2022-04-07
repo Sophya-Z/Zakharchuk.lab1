@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="block1">
+        <div class="blockCont">
+            <div><span class="nav_js_profile"></span></div>  
+            <div class="header_title">
+                JavaScript
+                <span>Курс по изучению языка</span>
+          </div>
+        </div>
+    </header>
+    <div class="block2">
+        <div class="content">
+            <div class="contTitle">
+                Что такое JavaScript?
+            </div>
+            <div class="textBlock">
+                Интерактивные элементы сайтов и мобильных приложений часто выполняются на языке JavaScript. 
+                Он хорошо интегрируется с кодом HTML/CSS, поддерживается основными браузерами и включен в них по умолчанию. 
+                Поэтому никаких вопросов с запуском веб-ресурсов не возникает, они работают без участия пользователя.
+            </div>
+            <div class="textBlock">
+                Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы.
+            </div>
+            <div class="textBlock">
+                Овладеть основами JavaScript полезно всем, кто касается сферы разработки и продвижения сайтов. 
+                В составе любого ресурса есть хотя бы 3-4 скрипта – от счетчика Яндекс.Метрики до формы захвата контактов, 
+                виджетов социальных сетей или регистрации аккаунта. Популярность платформы имеет объяснение: язык безопасен, он не предоставляет низкоуровневый доступ к процессам сервера.
+            </div>
+        </div>
+    </div>
+        <section class="modal">
+            <div class="container">
+                <div class="modal_js">
+                    <div class="modal_js_name">Ваше имя</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="block2" style="min-width: 600px; margin-top: -35px; max-height: 470px;">   
+            <div style="margin-top: 63px; font-size: 40px; padding-top: 60px; padding-bottom: 70px;
+            text-align: center;">
+                Демонстрации некоторых возможностей JS:
+            </div>
+            <form class="introduction" style="padding-top: 12px;">
+                <div class="opportunities_0">Введите имя:
+                <input name="name" id="name" type="text" placeholder="Your Name" class="placeholder">
+                <button id="mybtn" class="button" onclick="save_name()">Отправить</button>
+                </div>
+            </form>
+            <form class="introduction" style="padding-top: 52px;">
+                <div class="opportunities_0">Площадь треугольника:
+                    <input id="Base" type="number" placeholder="Основание" class="placeholder_1" style="margin-left: 98px;">
+                    <input id="Height" type="number" placeholder="Высота" class="placeholder_1">
+                    <div id="out" class="field">Ответ</div>
+                </div>
+            </form>
+            <form class="introduction" style="padding-top: 52px;">
+                <div class="opportunities_0">Сравнение строк:
+                    <input id="stringOne" type="text" placeholder="Первая строка" class="placeholder_1" style="margin-left: 148px;">
+                    <input id="stringTwo" type="text" placeholder="Вторая строка" class="placeholder_1">
+                    <button id="strOut" class="button_1" onclick="out()">Ответ</button>
+                </div>
+            </form>
+            <form class="introduction" style="padding-top: 52px;">
+                <div class="opportunities_0">Поиск max и min значение:
+                    <input id="minMaxValue" type="text" placeholder="Введите последовательность чисел" class="placeholder" style="width: 230px; margin-left: 73px; margin-right: 50px;">
+                    <div class="maxminValue"><output id="minMaxValue" type="text">max min</output></div>
+                    <button id="btnValue" class="button_1" style="margin-top: 5px;" >Посчитать</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="block2" style="min-width: 600px; height: 1150px;">   
+            <div style="margin-top: 23px; font-size: 40px; padding-top: 70px; padding-bottom: 70px;
+            text-align: center;">
+                Тест на проверку знаний JS
+            </div>
+            <form class="testJS">
+                <div class="introduction" style="padding-top: 12px;">
+                    <div class="test_js_question">
+                        <div class="question">Какие функции выполняет JS?</div>
+                        <div class="test_js_question_radio_btn" data-wrapper="true">
+                            <input type="radio" value="1" name="one" id="one" data-ans="true">
+                            <label for="one">Отвечает за функции на стороне клиента</label>
+                        </div>
+                        <div class="test_js_question_radio_btn">
+                            <input type="radio" value="2" name="one" id="two">
+                            <label for="two">Создаёт стилевое оформление сайта</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="introduction" style="padding-top: 52px;">
+                    <div class="test_js_question">
+                        <div class="question">Какая переменная записана верно?</div>
+                        <div class="test_js_question_radio_btn" data-wrapper="true">
+                            <input type="radio" value="1" name="two" id="one1" data-ans="true">
+                            <label for="one1">var b = false;</label>
+                        </div>
+                        <div class="test_js_question_radio_btn">
+                            <input type="radio" value="2" name="two" id="two1">
+                            <label for="two1">var num = 12,5;</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="introduction" style="padding-top: 52px;">
+                    <div class="test_js_question">
+                        <div class="question">Где верно указан вывод данных?</div>
+                        <div class="test_js_question_radio_btn">
+                            <input type="radio" value="1" name="three" id="one2">
+                            <label for="one2">documentWrite("Hello");</label>
+                        </div>
+                        <div class="test_js_question_radio_btn" data-wrapper="true">
+                            <input type="radio" value="2" name="three" id="two2" data-ans="true">
+                            <label for="two2">console.log("Hello");</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="introduction" style="padding-top: 52px;">
+                    <div class="test_js_question">
+                        <div class="question">У каких переменных область видимости больше?</div>
+                        <div class="test_js_question_radio_btn" data-wrapper="true">
+                            <input type="radio" value="1" name="four" id="one3" data-ans="true">                                
+                            <label for="one1">Глобальных</label>
+                        </div>
+                        <div class="test_js_question_radio_btn">
+                            <input type="radio" value="2" name="four" id="two3">
+                            <label for="two1">Локальных</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="introduction" style="padding-top: 52px;">
+                        <div>Что будет записано в переменную test?</div>
+                        <div class="test_code">
+                            <div>var a = 5;</div>
+                            <div>var test = 5 != a ? "Yes" : "No";</div>
+                        </div>
+                        <div><input type="text" name="test_input" class="placeholder_test"></div>
+                     </div>
+                </div>
+                <div class="question">
+                    <div class="introduction" style="padding-top: 52px;">
+                        <div>Напишите строку для запуска всплывающего окна со значением "Hi"</div>
+                        <div><input type="text" name="test_input" class="placeholder_test"></div>
+                     </div>
+                </div>
+                <div class="question">
+                    <div class="introduction" style="padding-top: 52px;">
+                        <div>Какое количество сообщений будет выведено в консоли?</div>
+                        <div class="test_code">
+                            <div>for (var i = 10; i < 35; i += 5) {</div>
+                            <div style="margin-left: 40px;">console.log(i);</div>
+                            <div>}</div>
+                        </div>
+                        <div><input type="text" name="test_input" class="placeholder_test"></div>
+                     </div>
+                </div>
+                <div class="question">
+                    <div class="introduction" style="padding-top: 52px;">
+                        <div>Что выведет alert?</div>
+                        <div class="test_code">
+                            <div>alert (str);</div>
+                            <div>var str = "Hello";</div>
+                        </div>
+                        <div><input type="text" name="test_input" class="placeholder_test"></div>
+                     </div>
+                </div>
+                <button id="test_js_submit" class="button" style="margin-top: 25px; margin-left: 440px;">Завершить</button>
+            </form>
+            
+            <div class="block2" style=" height: 400px; margin-top: 50px;">
+                <div class="section" id="timer">
+                    <div class="container">
+                        <h1 class="block_name">Таймер</h1>
+                        <div class="timer">
+                            <div class="timer_block">
+                                <div class="time_hour">00</div>
+                                <div class="title_timer">Hours</div>
+                            </div>
+                
+                            <div class="timer_block">
+                                <div class="time_minute">00</div>
+                                <div class="title_timer">Minutes</div>
+                            </div>
+                
+                            <div class="timer_block">
+                                <div class="time_second">00</div>
+                                <div class="title_timer">Seconds</div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="button_timer" id="button_timer_start">Старт</button>
+                            <button class="button_timer" id="button_timer_pause">Пауза</button>
+                            <button class="button_timer" id="button_timer_stop">Сброс</button>
+                        </div>
+                        <div class="btnValues">
+                            <button class="button_timer_value" id="button_timer_start_value">Введите данные</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <script src="script.js"></script>
+</body>
